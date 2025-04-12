@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/AventuraPeLogo.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/9099537b6d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styleFAQ.css">
+    <title>AventuraPE | FAQ</title>
+</head>
+<body>
+    <header>
+        <img src="assets/AventuraPeLogo.png" alt="Aventurela Logo" class="logo">
+        <nav>
+            <a href="index.html">Emprendedor</a>
+            <a href="FAQ.html">Preguntas frecuentes</a>
+            <a class="download-button-header" href="#descarga">Descargar</a>
+        </nav>
+    </header>
+<div class="container">
+    <div class="sidebar">
+        <h2>Categorías</h2>
+        <ul>
+            <li><a href="#" onclick="filterFAQ('login')">Inicio de sesión</a></li>
+            <li><a href="#" onclick="filterFAQ('emprendedor')">Para emprendedores</a></li>
+            <li><a href="#" onclick="filterFAQ('usuario')">Para usuarios</a></li>
+            <li><a href="#" onclick="filterFAQ('tecnico')">Problemas técnicos</a></li>
+        </ul>
+    </div>
+    <div class="FAQ">
+        <h1>Preguntas frecuentes</h1>
+        <div class="faq-list">
+            <!-- Inicio de sesion -->
+            <div class="faq-item login">
+                <div class="faq-question">No puedo iniciar sesión en mi cuenta, ¿qué puedo hacer?</div>
+                <div class="faq-answer">
+                    <p>Asegúrate de que estás utilizando las credenciales correctas. Si olvidaste tu contraseña, utiliza la opción de "Recuperar contraseña." Si el problema persiste, ponte en contacto con nuestro equipo de soporte para obtener ayuda adicional.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item login">
+                <div class="faq-question">¿Cómo recupero mi contraseña?</div>
+                <div class="faq-answer">
+                    <p>Haz clic en "Recuperar contraseña" en la página de inicio de sesión, ingresa tu correo electrónico, y te enviaremos un enlace para restablecerla.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item login">
+                <div class="faq-question">¿Qué hago si no recibo el correo para restablecer mi contraseña?</div>
+                <div class="faq-answer">
+                    <p>Revisa tu carpeta de spam o intenta reenviar el correo. Si aún no lo recibes, ponte en contacto con soporte.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item login">
+                <div class="faq-question">¿Puedo cambiar mi dirección de correo asociada a mi cuenta?</div>
+                <div class="faq-answer">
+                    <p>No, pero puedes crear una nueva cuenta con la nueva dirección de correo. Para mover tus datos a la nueva cuenta, contáctanos.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item login">
+                <div class="faq-question">Olvidé mi nombre de usuario, ¿cómo lo recupero?</div>
+                <div class="faq-answer">
+                    <p>Puedes iniciar sesión con tu dirección de correo electrónico o recuperar tu nombre de usuario contactando con soporte.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item login">
+                <div class="faq-question">¿Puedo iniciar sesión con redes sociales?</div>
+                <div class="faq-answer">
+                    <p>Sí, puedes vincular tu cuenta de AventuraPe con redes sociales como Google o Facebook para iniciar sesión de manera rápida.</p>
+                </div>
+            </div>
+            
+            <!-- Para emprededores -->
+            <div class="faq-item emprendedor">
+                <div class="faq-question">¿Qué tipo de actividades puedo publicar como emprendedor?</div>
+                <div class="faq-answer">
+                    <p>Si tienes un negocio o local, puedes publicar actividades como talleres, eventos culturales, clases de cocina, rutas guiadas, entre otros, que ofrezcan experiencias únicas para nuestros usuarios.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item emprendedor">
+                <div class="faq-question">¿Cuáles son los requisitos para publicar actividades?</div>
+                <div class="faq-answer">
+                    <p>Debes ser un emprendedor registrado en nuestra plataforma y cumplir con las normativas de publicación que AventuraPe tiene establecidas.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item emprendedor">
+                <div class="faq-question">¿Cómo puedo gestionar las reservas de mi actividad?</div>
+                <div class="faq-answer">
+                    <p>A través del panel de control en tu cuenta, podrás ver las reservas hechas por los usuarios y gestionarlas directamente.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item emprendedor">
+                <div class="faq-question">¿Puedo modificar o cancelar una actividad ya publicada?</div>
+                <div class="faq-answer">
+                    <p>Sí, puedes modificar la información o cancelar la actividad desde tu panel de control, siempre que informes a los usuarios con suficiente antelación.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item emprendedor">
+                <div class="faq-question">¿Cuánto cuesta publicar actividades en AventuraPe?</div>
+                <div class="faq-answer">
+                    <p>La publicación de actividades es gratuita, pero ofrecemos planes premium con mayor visibilidad para tus actividades.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item emprendedor">
+                <div class="faq-question">¿Cómo puedo destacar mi actividad?</div>
+                <div class="faq-answer">
+                    <p>Puedes optar por un plan de promoción en el cual tu actividad será mostrada en los primeros resultados y tendrá mayor visibilidad.</p>
+                </div>
+            </div>
+            
+            <!-- Para usuarios-->
+            <div class="faq-item usuario">
+                <div class="faq-question">¿Cómo me registro como usuario en AventuraPe?</div>
+                <div class="faq-answer">
+                    <p>Solo debes crear una cuenta a través de nuestra app y seguir los pasos indicados para comenzar a explorar microaventuras.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item usuario">
+                <div class="faq-question">¿Cómo puedo reservar una actividad?</div>
+                <div class="faq-answer">
+                    <p>Puedes buscar una actividad que te interese y, una vez dentro de los detalles de la actividad, hacer clic en "Reservar".</p>
+                </div>
+            </div>
+            
+            <div class="faq-item usuario">
+                <div class="faq-question">¿Puedo cancelar una reserva?</div>
+                <div class="faq-answer">
+                    <p>Sí, desde tu perfil puedes ver tus reservas activas y cancelarlas siempre que sea dentro del plazo permitido por el emprendedor.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item usuario">
+                <div class="faq-question">¿Cómo puedo valorar una actividad?</div>
+                <div class="faq-answer">
+                    <p>Una vez que hayas participado en la actividad, podrás dejar una valoración y comentarios desde la sección de tu perfil.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item usuario">
+                <div class="faq-question">¿Qué pasa si no puedo asistir a una actividad ya reservada?</div>
+                <div class="faq-answer">
+                    <p>Si no puedes asistir, asegúrate de cancelar tu reserva lo antes posible para evitar inconvenientes tanto para ti como para el emprendedor.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item usuario">
+                <div class="faq-question">¿Cómo puedo ver actividades recomendadas cerca de mi ubicación?</div>
+                <div class="faq-answer">
+                    <p>AventuraPe utiliza tu ubicación para recomendarte actividades cercanas. Solo asegúrate de tener activados los permisos de ubicación en la app.</p>
+                </div>
+            </div>
+            
+            <!-- Problemas tecnicos -->
+            <div class="faq-item tecnico">
+                <div class="faq-question">¿Qué hago si la aplicación no carga o se queda en blanco?</div>
+                <div class="faq-answer">
+                    <p>Verifica tu conexión a internet y asegúrate de tener la última versión de la aplicación instalada. Si el problema persiste, puedes intentar reiniciar tu dispositivo o contactarnos para soporte técnico.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item tecnico">
+                <div class="faq-question">¿Qué hago si la aplicación se cierra inesperadamente?</div>
+                <div class="faq-answer">
+                    <p>Cierra y vuelve a abrir la aplicación. Si el problema persiste, intenta desinstalarla y reinstalarla. Asegúrate de que tu dispositivo cumpla con los requisitos mínimos para ejecutar la app.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item tecnico">
+                <div class="faq-question">¿Por qué no puedo publicar o actualizar mis actividades?</div>
+                <div class="faq-answer">
+                    <p>Esto puede deberse a un problema de conexión o una actualización pendiente en la app. Verifica si los campos obligatorios están completos y el formato es correcto.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item tecnico">
+                <div class="faq-question">No puedo ver los comentarios o valoraciones de una actividad, ¿qué hago?</div>
+                <div class="faq-answer">
+                    <p>Intenta cerrar y volver a abrir la app. Si el problema persiste, verifica si hay actualizaciones pendientes o contacta con soporte.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item tecnico">
+                <div class="faq-question">La app me muestra un error al cargar imágenes, ¿cómo lo soluciono?</div>
+                <div class="faq-answer">
+                    <p>Esto podría ser un problema de conexión o del formato de la imagen. Verifica que cumpla con los requisitos de tamaño y formato establecidos.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item tecnico">
+                <div class="faq-question">¿Qué hago si no puedo actualizar la aplicación?</div>
+                <div class="faq-answer">
+                    <p>Asegúrate de tener suficiente espacio en tu dispositivo y una conexión estable. Si no puedes actualizar, intenta desinstalar y volver a instalar la app.</p>
+                </div>
+            </div>
+            
+
+        </div>
+    </div>
+</div>
+
+
+    <div id="descarga" class="download-section"></div>
+        <h2 class="download-title">¿Qué esperas para unirte a la aventura?
+            <br> Descarga la app móvil y empieza tu aventura</h2>
+        <div class="store-buttons">
+            <a href="https://www.apple.com/app-store/" class="store-button apple-store" target="_blank">
+                <img src="assets/appstore.png" alt="Descargar en Apple Store">
+            </a>
+            <a href="https://play.google.com/store" class="store-button google-play" target="_blank">
+                <img src="assets/playstore.png" alt="Descargar en Google Play">
+            </a>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-column">
+            <img src="assets/AventuraPeLogo.png" alt="Aventurate Logo" class="logo">
+        </div>
+        <div class="footer-column">
+            <div class="cofundadores">
+                <h3>Cofundadores</h3>
+                Jimena Tamara Cama Salvatierra<br>
+                Kalid Palacios Jauregui<br>
+                Barbara Susana Quezada Portalatico<br>
+                Aldo Alberto Baldeon Fabian<br>
+                Alexander Jair Castillo Castillo<br><br>
+                <a href="https://twitter.com" target="_blank" ><img src="assets/twitter.png" alt="twitter" class="social-button"></a>
+                <a href="https://facebook.com" target="_blank"><img src="assets/facebook.png" alt="facebook" class="social-button"></a>
+                <a href="https://instagram.com" target="_blank"><img src="assets/instagram.png" alt="instagram" class="social-button"></a>
+                <a href="https://youtube.com"target="_blank"><img src="assets/youtube.png" alt="youtube" class="social-button"></a>
+            </div>
+        </div>
+        <div class="footer-column">
+            <p class="copyright">© Copyright Derechos restringidos | Perú</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const isOpen = question.classList.contains('active');
+                                document.querySelectorAll('.faq-question').forEach(q => {
+                    q.classList.remove('active');
+                    q.nextElementSibling.style.maxHeight = null;
+                });
+                if (!isOpen) {
+                    question.classList.add('active');
+                    answer.style.maxHeight = answer.scrollHeight + "px";
+                }
+            });
+        });
+
+        function filterFAQ(category) {
+            var faqItems = document.querySelectorAll('.faq-item');
+                        faqItems.forEach(function(item) {
+                            if (item.classList.contains(category)) {
+                                item.style.display = 'block';
+                            } else {
+                                item.style.display = 'none';
+                            }
+                        });
+                    }
+    </script>
+</body>
+</html>
