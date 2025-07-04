@@ -1,7 +1,6 @@
 const menuBtn = document.getElementById("menu-btn");
 const navLinks = document.getElementById("nav-links");
 const menuBtnIcon = menuBtn.querySelector("i");
-const faqItems = document.querySelectorAll(".faq-item");
 const header = document.querySelector("header");
 
 menuBtn.addEventListener("click", (e) => {
@@ -33,53 +32,7 @@ const scrollRevealOption = {
   duration: 1000,
 };
 
-faqItems.forEach(item => {
-  item.addEventListener("click", () => {
-    faqItems.forEach(i => {
-      if (i !== item) {
-        i.classList.remove("active");
-      }
-    });
-
-    item.classList.toggle("active");
-  });
-});
-
-function validateContactForm() {
-  const name = document.getElementById('contact_name').value;
-  const email = document.getElementById('contact_email').value;
-  const message = document.getElementById('contact_message').value;
-
-  // Validación de nombre
-  if (name.length < 3) {
-      showResponse('El nombre debe tener al menos 3 caracteres.');
-      return false;
-  }
-
-  // Validación de correo electrónico
-  if (!validateEmail(email)) {
-      showResponse('Por favor, introduce un correo electrónico válido.');
-      return false;
-  }
-
-  // Simulación de respuesta de envío
-  showResponse('Gracias por tu mensaje. Nos pondremos en contacto pronto.');
-  return false; // Prevenir el envío del formulario
-}
-
-function validateEmail(email) {
-  const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  return re.test(String(email).toLowerCase());
-}
-
-function showResponse(message) {
-  const responseDiv = document.getElementById('contact_response');
-  responseDiv.innerText = message;
-
-  // Opcional: Limpiar el formulario después de enviar
-  document.getElementById('contact_form').reset();
-}
-
+// Animaciones ScrollReveal
 ScrollReveal().reveal(".header__container .section__subheader", {
   ...scrollRevealOption,
 });
@@ -97,6 +50,96 @@ ScrollReveal().reveal(".header__container .header__socials", {
   delay: 1500,
 });
 
+// Animaciones para sección Pitch
+ScrollReveal().reveal(".pitch__header", {
+  ...scrollRevealOption,
+});
+ScrollReveal().reveal(".pitch__subheader", {
+  ...scrollRevealOption,
+  delay: 500,
+});
+ScrollReveal().reveal(".pitch__message", {
+  ...scrollRevealOption,
+  delay: 1000,
+});
+ScrollReveal().reveal(".pitch__cta", {
+  ...scrollRevealOption,
+  delay: 1500,
+});
+
+// Animaciones para sección Screenshots
+ScrollReveal().reveal(".app_screenshots .section__subheader", {
+  ...scrollRevealOption,
+});
+ScrollReveal().reveal(".app_screenshots .section__header", {
+  ...scrollRevealOption,
+  delay: 500,
+});
+ScrollReveal().reveal(".app_screenshots p", {
+  ...scrollRevealOption,
+  delay: 700,
+});
+ScrollReveal().reveal(".screenshot__item", {
+  ...scrollRevealOption,
+  delay: 900,
+  interval: 200,
+});
+
+// Animaciones para sección de Cómo Funciona
+ScrollReveal().reveal(".como_funciona .section__subheader", {
+  ...scrollRevealOption,
+});
+ScrollReveal().reveal(".como_funciona .section__header", {
+  ...scrollRevealOption,
+  delay: 500,
+});
+ScrollReveal().reveal(".como_funciona p", {
+  ...scrollRevealOption,
+  delay: 1000,
+});
+ScrollReveal().reveal(".paso", {
+  ...scrollRevealOption,
+  delay: 1500,
+  interval: 200,
+});
+
+// Animaciones para sección de Planes
+ScrollReveal().reveal(".planes .section__subheader", {
+  ...scrollRevealOption,
+});
+ScrollReveal().reveal(".planes .section__header", {
+  ...scrollRevealOption,
+  delay: 500,
+});
+ScrollReveal().reveal(".plan", {
+  ...scrollRevealOption,
+  delay: 1000,
+  interval: 300,
+});
+
+// Animaciones para sección de Descarga
+ScrollReveal().reveal(".download_app .section__subheader", {
+  ...scrollRevealOption,
+});
+ScrollReveal().reveal(".download_app .section__header", {
+  ...scrollRevealOption,
+  delay: 500,
+});
+ScrollReveal().reveal(".download__buttons", {
+  ...scrollRevealOption,
+  delay: 1000,
+});
+ScrollReveal().reveal(".download__web", {
+  ...scrollRevealOption,
+  delay: 1200,
+});
+ScrollReveal().reveal(".download__image", {
+  ...scrollRevealOption,
+  origin: "right",
+  delay: 800,
+});
+
+// Animaciones para secciones existentes
 ScrollReveal().reveal(".about__image-1, .about__image-3", {
   ...scrollRevealOption,
   origin: "right",
@@ -117,12 +160,35 @@ ScrollReveal().reveal(".about__content p", {
   ...scrollRevealOption,
   delay: 1500,
 });
-ScrollReveal().reveal(".about__content .about__btn", {
+
+// Animaciones para testimonios
+ScrollReveal().reveal(".testimonios .section__subheader", {
   ...scrollRevealOption,
-  delay: 2000,
 });
-ScrollReveal().reveal(".contact_us_section", {
+ScrollReveal().reveal(".testimonios .section__header", {
+  ...scrollRevealOption,
+  delay: 500,
+});
+ScrollReveal().reveal(".testimonios__slide", {
+  ...scrollRevealOption,
+  delay: 1000,
+  interval: 300,
+});
+
+// Animaciones para presentación
+ScrollReveal().reveal(".presentacion .section__subheader", {
+  ...scrollRevealOption,
+});
+ScrollReveal().reveal(".presentacion .section__header", {
+  ...scrollRevealOption,
+  delay: 500,
+});
+ScrollReveal().reveal(".presentacion p", {
+  ...scrollRevealOption,
+  delay: 1000,
+});
+ScrollReveal().reveal(".presentacion__image", {
   ...scrollRevealOption,
   origin: "left",
-  delay: 500,
+  delay: 800,
 });
