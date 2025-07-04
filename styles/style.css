@@ -416,11 +416,7 @@ nav {
 
 }
 .servicios {
-  background-image: linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 0),
-    var(--primary-color) 8rem
-  );
+  background-color: var(--primary-color);
   overflow: hidden;
 }
 .about__container {
@@ -907,9 +903,14 @@ nav {
 
 /* Sección de Pitch Hero */
 .pitch_hero {
-  background: linear-gradient(to bottom, var(--primary-color) 0%, rgba(29, 56, 18, 0.95) 100%);
-  padding: 4rem 0;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0),
+    var(--primary-color) 8rem
+  );
+  padding: 17rem;
   text-align: center;
+  overflow: hidden;
 }
 
 .pitch__container {
