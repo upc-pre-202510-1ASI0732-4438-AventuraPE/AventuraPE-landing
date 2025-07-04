@@ -908,7 +908,7 @@ nav {
     rgba(255, 255, 255, 0),
     var(--primary-color) 8rem
   );
-  padding: 17rem;
+  padding: 15rem;
   text-align: center;
   overflow: hidden;
 }
